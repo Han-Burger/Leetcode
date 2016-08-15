@@ -23,6 +23,6 @@ Return `1` since the palindrome partitioning `["aa","b"]` could be produced usin
 
 <div>
 
-<div id="similar" class="btn btn-xs btn-warning">Hide Similar Problems</div>
+<div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
 
-<span class="hidebutton" style="display: inline; opacity: 0.996379;">[(M) Palindrome Partitioning](/problems/palindrome-partitioning/)</span></div>
+<span class="hidebutton">[(M) Palindrome Partitioning](/problems/palindrome-partitioning/)</span></div>
