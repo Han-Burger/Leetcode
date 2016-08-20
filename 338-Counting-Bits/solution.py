@@ -1,4 +1,4 @@
-from math import log
+
 class Solution(object):
     def countBits(self, num):
         """
@@ -6,10 +6,11 @@ class Solution(object):
         :rtype: List[int]
         """
         m = [0] * (num + 1)
+        scale = 0
         for i in xrange(1, len(m)):
-            remain = i - 2 ** self.log2(i)
-            m[i] = m[remain] + 1
+            scale = self.log2(i, scale)
+            m[i] = m[i - 2 ** scale] + 1
         return m
     
-    def log2(self, num):
-        return int(log(num)/log(2))
+    def log2(self, num, prev):
+        return prev + 1 if (num >> prev) > 1 else prev
