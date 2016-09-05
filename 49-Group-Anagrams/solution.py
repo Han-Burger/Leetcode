@@ -4,9 +4,6 @@ class Solution(object):
         :type strs: List[str]
         :rtype: List[List[str]]
         """
-        return self.directSort(strs)
-    
-    def directSort(self, strs):
         m = {}
         for s in strs:
             key = str(sorted(s))
