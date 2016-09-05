@@ -4,7 +4,32 @@ class Solution(object):
         :type board: List[List[str]]
         :rtype: void Do not return anything, modify board in-place instead.
         """
-        self.solve(board)
+        #self.backtracking(board)
+        self.preElimination(board)
+    
+    def preElimination(self, b):
+        hasChange = False
+        for i in xrange(9):
+            for j in xrange(9):
+                if b[i][j] == '.':
+                    validInput = '0'
+                    overOneInput = False
+                    for c in map(str, xrange(1, 10)):
+                        if self.valid(b, i, j, c):
+                            if validInput != '0':
+                                overOneInput = True
+                                break
+                            else:
+                                validInput = c
+                    if overOneInput: 
+                        continue
+                    else:
+                        b[i][j] = validInput
+                        hasChange = True
+                        break
+            if hasChange: break
+        if hasChange: self.preElimination(b)
+        else: return self.backtracking(b)
     
     def backtracking(self, b):
         self.solve(b)
