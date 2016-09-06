@@ -38,6 +38,6 @@ return `[1,3,2]`.
 
 <div>
 
-<div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
+<div id="similar" class="btn btn-xs btn-warning">Hide Similar Problems</div>
 
-<span class="hidebutton">[(M) Validate Binary Search Tree](/problems/validate-binary-search-tree/) [(M) Binary Tree Preorder Traversal](/problems/binary-tree-preorder-traversal/) [(H) Binary Tree Postorder Traversal](/problems/binary-tree-postorder-traversal/) [(M) Binary Search Tree Iterator](/problems/binary-search-tree-iterator/) [(M) Kth Smallest Element in a BST](/problems/kth-smallest-element-in-a-bst/) [(H) Closest Binary Search Tree Value II](/problems/closest-binary-search-tree-value-ii/) [(M) Inorder Successor in BST](/problems/inorder-successor-in-bst/)</span></div>
+<span class="hidebutton" style="display: inline; opacity: 0.818712;">[(M) Validate Binary Search Tree](/problems/validate-binary-search-tree/) [(M) Binary Tree Preorder Traversal](/problems/binary-tree-preorder-traversal/) [(H) Binary Tree Postorder Traversal](/problems/binary-tree-postorder-traversal/) [(M) Binary Search Tree Iterator](/problems/binary-search-tree-iterator/) [(M) Kth Smallest Element in a BST](/problems/kth-smallest-element-in-a-bst/) [(H) Closest Binary Search Tree Value II](/problems/closest-binary-search-tree-value-ii/) [(M) Inorder Successor in BST](/problems/inorder-successor-in-bst/)</span></div>
