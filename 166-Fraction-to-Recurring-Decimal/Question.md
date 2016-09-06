@@ -37,6 +37,6 @@ Special thanks to [@Shangrila](https://oj.leetcode.com/discuss/user/Shangrila) f
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Hash Table](/tag/hash-table/) [Math](/tag/math/)</span></div>
+<span class="hidebutton">[Hash Table](/tag/hash-table/) [Math](/tag/math/)</span></div>
