@@ -11,9 +11,6 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
-        return self.iteratively(root)
-        
-    def iteratively(self, root):
         l = []
         m = set()
         s = []
