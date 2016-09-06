@@ -11,6 +11,9 @@ class Solution(object):
         :type root: TreeNode
         :rtype: List[int]
         """
+        return self.recursively(root)
+        
+    def iteratively(self, root):
         l = []
         m = set()
         s = []
@@ -29,3 +32,6 @@ class Solution(object):
                     l.append(node.val)
         return l
                 
+    def recursively(self, root):
+        if root is None: return []
+        return self.recursively(root.left) + [root.val] + self.recursively(root.right)
