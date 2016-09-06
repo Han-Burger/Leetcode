@@ -6,24 +6,7 @@ class Solution(object):
         :rtype: str
         """
         if denominator == 0: return 0
-        """
-        if denominator < 0:
-            numerator = -numerator
-            denominator = -denominator
         
-        # avoid MAX_INT, MIN_INT
-        intPart = numerator / denominator
-        decPart = numerator % denominator
-        
-        # avoid -1 to 0
-        sign = '-' if intPart < 0 else ''
-        if intPart < 0:
-            if decPart != 0:
-                intPart = abs(intPart + 1)
-                decPart = abs(decPart - denominator)
-            else:
-                intPart = abs(intPart)
-        """
         sign = '-' if (numerator < 0 and denominator > 0) or (numerator > 0 and denominator < 0) else ''
         numerator = abs(numerator)
         denominator = abs(denominator)
