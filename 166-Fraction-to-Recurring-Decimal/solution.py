@@ -6,7 +6,7 @@ class Solution(object):
         :rtype: str
         """
         if denominator == 0: return 0
-        
+        """
         if denominator < 0:
             numerator = -numerator
             denominator = -denominator
@@ -23,6 +23,15 @@ class Solution(object):
                 decPart = abs(decPart - denominator)
             else:
                 intPart = abs(intPart)
+        """
+        sign = '-' if (numerator < 0 and denominator > 0) or (numerator > 0 and denominator < 0) else ''
+        numerator = abs(numerator)
+        denominator = abs(denominator)
+        intPart = numerator / denominator
+        decPart = numerator % denominator
+        
+        if decPart == 0:
+            return sign + str(intPart)
         
         m = {}
         s = ""
@@ -38,8 +47,6 @@ class Solution(object):
         if decPart != 0:
             i = m[decPart]
             return sign + str(intPart) + '.' + s[: i] + '(' + s[i: ] + ')'
-        elif s == "":
-            return sign + str(intPart)
         else:
             return sign + str(intPart) + '.' + s
         
