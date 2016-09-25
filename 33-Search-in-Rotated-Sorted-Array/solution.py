@@ -30,5 +30,6 @@ class Solution(object):
             else:
                 if nums[mid] > leftVal or nums[mid] < target: i = mid
                 else: j = mid
+        
         return -1
         
